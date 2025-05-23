@@ -12,5 +12,6 @@ function calculateDays() {
 
 document.addEventListener("DOMContentLoaded", () => {
   const days = calculateDays();
-  console.log(days);
+
+  document.getElementById("days").textContent = days;
 });
