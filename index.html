@@ -4,12 +4,22 @@
 		<meta charset="UTF-8" />
 		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
 		<link rel="stylesheet" href="/src/style.css" />
+		<link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Contagem de dias para o Natal</title>
 	</head>
 	<body class="bg-green-800 min-h-screen">
 		<div class="flex flex-col items-center gap-6 pt-8" id="app">
-			<main class="border-2 border-red-700 bg-slate-100 rounded-md p-10 m-6 sm:m-0">
+			<main class="relative border-4 border-red-700 bg-slate-100 rounded-md p-10 m-6 sm:m-0">
+				<div class="absolute -top-3 -left-3 size-6 bg-red-500 border-2 rounded-tr-full rounded-bl-full"></div>
+				<div class="absolute -bottom-3 -right-3 size-6 bg-green-500 border-2 rounded-tr-full rounded-bl-full"></div>
+				<div class="absolute -bottom-3 -left-3 size-6 bg-blue-500 border-2 rounded-tl-full rounded-br-full"></div>
+				<div class="absolute -top-3 -right-3 size-6 bg-yellow-500 border-2 rounded-tl-full rounded-br-full"></div>
+				<i class="text-center block ph ph-gift text-7xl text-red-700"></i>
 				<h1 class="text-center text-3xl font-bold text-green-700">Contagem de dias para o Natal</h1>
         <div class="my-6">
           <h1 id="days" class="text-6xl font-bold text-red-700 text-center">00</h1>
