@@ -12,9 +12,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Contagem de dias para o Natal</title>
 	</head>
-	<body class="bg-green-800 min-h-screen">
-		<div class="flex flex-col items-center gap-6 pt-8" id="app">
-			<main class="relative border-4 border-red-700 bg-slate-100 rounded-md p-10 m-6 sm:m-0">
+	<body class="bg-green-800">
+		<div class="absolute inset-0 pointer-events-none overflow-hidden" id="snow"></div>
+
+		<main class="flex flex-col items-center gap-6 pt-8 min-h-screen" id="app">
+			<div class="relative border-4 border-red-700 bg-slate-100 rounded-md p-10 m-6 sm:m-0">
 				<div id="red-light" class="absolute -top-3 -left-3 size-6 bg-red-900 border-2 rounded-tr-full rounded-bl-full"></div>
 				<div id="green-light" class="absolute -bottom-3 -right-3 size-6 bg-green-900 border-2 rounded-tr-full rounded-bl-full"></div>
 				<div id="blue-light" class="absolute -bottom-3 -left-3 size-6 bg-blue-900 border-2 rounded-tl-full rounded-br-full"></div>
@@ -29,16 +31,16 @@
 
         <div class="mt-6 text-center">
           <button class="hover:scale-110 hover:cursor-pointer hover:bg-red-700 hover:text-white transition-all duration-75 border-2 border-red-700 text-red-700 px-6 py-2 rounded-md">
-						Mostrar neve
+						Esconder neve
 					</button>
         </div>
-			</main>
-
-			<div class="m-3 sm:m-0">
-				<h4 class="mb-2 text-center text-2xl font-medium text-white">Curiosidades sobre o Natal</h4>
-				<p id="curiosity" class="text-lg mb-8 sm:mb-0 text-center text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, delectus?</p>
 			</div>
-		</div>
+
+			<div class="relative m-3 sm:m-0 w-2/3 text-white text-center">
+				<h4 class="mb-2 text-2xl font-medium">Curiosidade sobre o Natal</h4>
+				<ul id="facts"></ul>
+			</div>
+		</main>
 	</body>
 
 	<script src="/src/script.js"></script>
