@@ -4,7 +4,7 @@ Um aplicativo web simples e animado para contar os dias restantes até o Natal! 
 
 ## Demonstração
 
-![Demonstração do Christmas Countdown](screenshot.png)
+![Demonstração do Christmas Countdown](./screenshots/home.png)
 
 ## Link de acesso
 https://marcelosarinho.github.io/christmas-countdown/
